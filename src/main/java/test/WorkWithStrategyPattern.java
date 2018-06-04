@@ -23,24 +23,23 @@ public class WorkWithStrategyPattern {
         I_Animal birdy = new Bird();
         I_Animal fishy = new Fish();
 
-        System.out.println("Birdy what can you do? " + birdy.behavior());
-        System.out.println("Fishy what can you do? " + fishy.behavior());
+        System.out.println("Birdy what can you do? \n" + birdy.behavior() + "\n");
+        System.out.println("Fishy what can you do? \n" + fishy.behavior() + "\n");
 
         //Bird - Change the bird behavior
         birdy.setBehavior(new Swim());
-        System.out.println("Birdy changes " + birdy.behavior());
+        System.out.println("Birdy change behavior: \n" + birdy.behavior() + "\n");
 
         //Fish - Change the fish behavior
         fishy.setBehavior(new Fly());
-        System.out.println("Fish change" + fishy.behavior());
-        
+        System.out.println("Fish change behavior: \n" + fishy.behavior() + "\n");
 
         //Bird - test how it walks
-        System.out.println("Birdys tempo: " + birdy.tempo());
+        System.out.println("Birdys tempo: \n" + birdy.tempo() + "\n");
 
         //Change birdies tempo
         birdy.setTempo(new Fast());
-        System.out.println("Birdie Change" + birdy.tempo());
+        System.out.println("Birdie Change the tempo: \n" + birdy.tempo());
 
     }
 }

@@ -30,16 +30,16 @@ public class ReptileFactory implements I_Factory {
         scanner = new Scanner(System.in);
 
         //Choose reptil 
-        System.out.println("Which reptile would you like to get?");
+        System.out.println("Which reptile would you like to create?");
         reptilList();
         choice = scanner.nextLine();
-        
+
         switch (choice) {
             case "Lizard":
-                System.out.println("You selected to see the Lizard");
+                System.out.println("You selected to get a Lizard");
                 return new Lizard();
             case "Chameleon":
-                System.out.println("You selected to see the Chameleon");
+                System.out.println("You selected to get a Chameleon");
                 return new Chameleon();
             default:
                 System.out.println("Please enter a name from the list");

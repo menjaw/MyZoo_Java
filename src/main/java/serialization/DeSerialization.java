@@ -28,7 +28,7 @@ public class DeSerialization {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         try {
-            path = "C:\\Temp\\Illness.ser";
+            path = "C:\\Temp\\Michelle.ser";
             fileInStream = new FileInputStream(path);
             objInStream = new ObjectInputStream(fileInStream);
 

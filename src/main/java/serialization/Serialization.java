@@ -20,7 +20,6 @@ import subClass.Lion;
  */
 public class Serialization {
     //Variables
-
     private static Animal_Interface zebra;
     private static Animal_Interface lion;
     private static String path;
@@ -30,9 +29,9 @@ public class Serialization {
     public static void main(String[] args) throws IOException {
 
         try {
-            zebra = new Zebra("Zebra Zenna", 250, "La la al ula la la ti", "Sings", "Put on some real music");
+            zebra = new Zebra("Michelle", 25, "La la al ula la la ti", "Sings", "Put on some real music");
             lion = new Lion("Lion Lennon", 150, "Wrral wraal wraaal", "Cry", "Cuddle it");
-            path = "C:\\Temp\\Illness.ser";
+            path = "C:\\Temp\\Michelle.ser";
             fileOutStream = new FileOutputStream(path);
             objOutStream = new ObjectOutputStream(fileOutStream);
 
